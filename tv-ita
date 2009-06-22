@@ -1,0 +1,25 @@
+#!/bin/bash
+PLAYER=vlc
+usage () {
+    echo "Usage tv-ita tvname"
+    echo "Tv names list:"
+    echo "rai[1|2|3|news24|edu1]"
+    echo "sportitalia"
+    exit 1
+}
+if [ ! $# = 1 ] ; then
+    usage
+fi
+
+case $1 in
+    "rai1" ) url="mmsh://212.162.68.13/prodtvr1?MSWMExt=.asf";;
+    "rai2" ) url="mms://212.162.68.13/prodtvr2";;
+    "rai3" ) url="mms://212.162.68.13/prodtvr3";;
+    "rainews24" ) url="mms://a1509.l6934735508.c69347.e.lm.akamaistream.net/D/1509/69347/v0001/reflector:35508?auth=daEaPdkcidcb4b6aAb8cgbJaHa7c1cCaLdZ-bkp2zy-b4-BmrwzHp&aifp=V001";;
+    "raisport" ) url="mms://212.162.68.13/raisport+";;
+    "raiedu1" ) url="mms://212.162.68.13/EDU1";;
+    "sportitalia" ) url="mms://mms.cdn-tiscali.com/sportitalia";;
+    * ) usage;;
+esac
+
+$PLAYER "$url"
