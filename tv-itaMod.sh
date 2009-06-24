@@ -17,6 +17,8 @@
 
 #!/bin/bash
 
+# PLEAMBLE
+PROJECT=tv-ita
 if [ -e /usr/bin/cvlc ]; then
     PLAYER=/usr/bin/cvlc
 elif [ -e  /usr/bin/vlc ]; then 
