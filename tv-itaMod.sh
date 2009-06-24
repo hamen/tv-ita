@@ -13,7 +13,7 @@
 #
 # Main Author: Ivan Morgillo < imorgillo [at] sanniolug [dot] org >
 #
-# Graphic Author: Stefano Viola < 
+# Graphic Author: Stefano Viola < Esteban Sannin exstreme@hotmail.it
 
 #!/bin/bash
 
