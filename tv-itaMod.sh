@@ -22,7 +22,7 @@ if [ -e /usr/bin/cvlc ]; then
 elif [ -e  /usr/bin/vlc ]; then 
     PLAYER=/usr/bin/vlc
 else
-    echo "Hai bisogno di VLC o CVLC"
+    echo "Hai bisogno di installare VLC o CVLC"
     exit 1
 fi
 
