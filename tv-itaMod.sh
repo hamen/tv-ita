@@ -17,7 +17,14 @@
 
 #!/bin/bash
 
-PLAYER=cvlc
+if [ -e /usr/bin/cvlc ]; then
+    PLAYER=/usr/bin/cvlc
+elif [ -e  /usr/bin/vlc ]; then 
+    PLAYER=/usr/bin/vlc
+else
+    echo "Hai bisogno di installare VLC o CVLC"
+    exit 1
+fi
 
 SCELTA=`zenity --title "TV-ITA Streaming" \
 --text "Selection channel:" \
