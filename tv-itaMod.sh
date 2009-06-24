@@ -11,9 +11,9 @@
 # You should have received a copy of the GNU General Public License
 # along with 'TV-ita'. If not, see <http://www.gnu.org/licenses/>.
 #
-# Main Author: Ivan Morgillo < imorgillo [at] sanniolug [dot] org >
-#
-# Graphic Author: Stefano Viola < Esteban Sannin exstreme@hotmail.it
+# Authors:
+# Ivan Morgillo < imorgillo [at] sanniolug [dot] org >
+# Stefano Viola < EstebanSanninexstreme [at] hotmail [dot] it >
 
 #!/bin/bash
 
