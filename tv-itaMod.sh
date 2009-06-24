@@ -17,7 +17,7 @@
 
 #!/bin/bash
 
-PLAYER=vlc
+PLAYER=cvlc
 
 SCELTA=`zenity --title "TV-ITA Streaming" \
 --text "Selection channel:" \
@@ -31,7 +31,6 @@ false "Rai3" "Variety" \
 false "Rainews24" "Information" \
 false "Raisport" "Sport" \
 false "Raiedu1" "Education" \
-false "Raiedu2" "Education" \
 false "Sportitalia" "Sport" \
 false "Rtl" "Music" \
 false "Allmusic" "Music" \
@@ -40,13 +39,12 @@ false "Canale7" "Variety" \
 --width=300 --height=430 `
 
 case $SCELTA in
-    "Rai1" ) url="mmsh://212.162.68.13/prodtvr1?MSWMExt=.asf";;
-    "Rai2" ) url="mms://212.162.68.13/prodtvr2";;
-    "Rai3" ) url="mms://212.162.68.13/prodtvr3";;
-    "Rainews24" ) url="mms://a1509.l6934735508.c69347.e.lm.akamaistream.net/D/1509/69347/v0001/reflector:35508?auth=daEaPdkcidcb4b6aAb8cgbJaHa7c1cCaLdZ-bkp2zy-b4-BmrwzHp&aifp=V001";;
-    "Raisport" ) url="mms://212.162.68.13/raisport+";;
-    "Raiedu1" ) url="mms://212.162.68.13/EDU1";;
-    "Raiedu2" )url="mms://212.162.68.13/EDU2";;
+    "Rai1" ) url="http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=983";;
+    "Rai2" ) url="http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=984";;
+    "Rai3" ) url="http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=986";;
+    "Rainews24" ) url="http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=1";;
+    "Raisport" ) url="http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=4145";;
+    "Raiedu1" ) url="http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=24268";;
     "Sportitalia" ) url="mms://mms.cdn-tiscali.com/sportitalia";;
     "Rtl" ) url="mms://151.1.245.36/rtl102.5vs";;
     "Allmusic" ) url="mms://live.mediaserver.kataweb.it/retea?MSWMExt=.asf";;
@@ -55,5 +53,5 @@ case $SCELTA in
        * ) zenity --info --text="Request Annulled" --width=250 & exit 1;;
 esac
  
-$PLAYER "$url"
+$PLAYER --http-user-agent="Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.6) Gecko/2009020911 Ubuntu/8.10 (intrepid) Firefox/3.0.6" "$url"
 
