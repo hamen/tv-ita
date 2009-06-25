@@ -52,7 +52,7 @@ function gui {
 	true "Rai1" "Variety" \
 	false "Rai2" "Variety" \
 	false "Rai3" "Variety" \
-	false "RaiStoria" "Educational"
+	false "RaiStoria" "Educational" \
 	false "Rainews24" "Information" \
 	false "Raisport" "Sport" \
 	false "Raiedu1" "Educational" \
