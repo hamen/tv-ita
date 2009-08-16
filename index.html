@@ -1,0 +1,122 @@
+<html>
+  <head>
+    <script type="text/javascript">
+     function playVideo(sourceId, targetId) {
+     if (typeof(sourceId)=='string') {sourceId=document.getElementById(sourceId);}
+     if (typeof(targetId)=='string') {targetId=document.getElementById(targetId);}
+     targetId.innerHTML=sourceId.innerHTML;
+     return false;
+     }
+   </script>
+
+  </head>
+<body>
+  <!-- Lista link ai canali -->
+  <ul>
+    <li>
+      <a href="#"
+	 onclick='return playVideo("selectDemo1","videoPlayback")'>RaiNews24</a>
+    </li>
+    <li>
+      <a href="#"
+	 onclick='return playVideo("selectDemo2","videoPlayback")'>Rai1</a>
+    </li>
+    <li>
+      <a href="#"
+	 onclick='return playVideo("selectDemo3","videoPlayback")'>Rai2</a>
+    </li>
+    <li>
+      <a href="#"
+	 onclick='return playVideo("selectDemo4","videoPlayback")'>Rai3</a>
+    </li>
+    <li>
+      <a href="#"
+	 onclick='return playVideo("selectDemo5","videoPlayback")'>RaiSport</a>
+    </li>
+  </ul>
+  
+  <!-- Contenitore player -->
+  <div id='videoPlayback'
+       style='width: 435px; height:350px; background-color: #800000;'>
+  </div>
+ 
+  <!-- Lista canali -->
+  <div id='selectDemo1' style='display: none'>
+    <embed id="rainews24"
+	   width="425%" height="350%"
+	   name="plugin"
+	   src="http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=1"
+	   type="video/x-ms-asf" />
+  </div> 
+  <div id='selectDemo2' style='display: none'>
+    <embed id="rai1"
+	   width="425%" height="350%"
+	   name="plugin"
+	   src="http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=983"
+	   type="video/x-ms-asf" />
+  </div> 
+  <div id='selectDemo3' style='display: none'>
+    <embed id="rai2"
+	   width="425%" height="350%"
+	   name="plugin"
+	   src="http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=984"
+	   type="video/x-ms-asf" />
+  </div> 
+  <div id='selectDemo4' style='display: none'>
+    <embed id="rai3"
+	   width="425%" height="350%"
+	   name="plugin"
+	   src="http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=986"
+	   type="video/x-ms-asf" />
+  </div> 
+  <div id='selectDemo5' style='display: none'>
+    <embed id="raisport"
+	   width="425%" height="350%"
+	   name="plugin"
+	   src="http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=4145"
+	   type="video/x-ms-asf" />
+  </div> 
+  <div id='selectDemo1' style='display: none'>
+    <embed id="rainews24"
+	   width="425%" height="350%"
+	   name="plugin"
+	   src="http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=1"
+	   type="video/x-ms-asf" />
+  </div> 
+  <div id='selectDemo1' style='display: none'>
+    <embed id="rainews24"
+	   width="425%" height="350%"
+	   name="plugin"
+	   src="http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=1"
+	   type="video/x-ms-asf" />
+  </div> 
+  <div id='selectDemo1' style='display: none'>
+    <embed id="rainews24"
+	   width="425%" height="350%"
+	   name="plugin"
+	   src="http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=1"
+	   type="video/x-ms-asf" />
+  </div> 
+  <div id='selectDemo1' style='display: none'>
+    <embed id="rainews24"
+	   width="425%" height="350%"
+	   name="plugin"
+	   src="http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=1"
+	   type="video/x-ms-asf" />
+  </div> 
+  <div id='selectDemo1' style='display: none'>
+    <embed id="rainews24"
+	   width="425%" height="350%"
+	   name="plugin"
+	   src="http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=1"
+	   type="video/x-ms-asf" />
+  </div> 
+  <div id='selectDemo1' style='display: none'>
+    <embed id="rainews24"
+	   width="425%" height="350%"
+	   name="plugin"
+	   src="http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=1"
+	   type="video/x-ms-asf" />
+  </div> 
+</body>
+</html>
